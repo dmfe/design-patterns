@@ -14,7 +14,7 @@
     <name>simu-dack</name>
 
     <properties>
-        <project.src.maincl>com.nc.despat.simudack.Main</project.src.maincl>
+        <project.src.maincl>com.nc.despat.simudack.MainDuckSimulator</project.src.maincl>
     </properties>
 
     <build>
