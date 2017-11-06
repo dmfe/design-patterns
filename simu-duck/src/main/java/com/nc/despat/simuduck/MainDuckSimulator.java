@@ -1,9 +1,9 @@
-package com.nc.despat.simudack;
+package com.nc.despat.simuduck;
 
-import com.nc.despat.simudack.behaviors.impl.FlyRocketPowered;
-import com.nc.despat.simudack.ducks.Duck;
-import com.nc.despat.simudack.ducks.MallardDuck;
-import com.nc.despat.simudack.ducks.ModelDuck;
+import com.nc.despat.simuduck.behaviors.impl.FlyRocketPowered;
+import com.nc.despat.simuduck.ducks.Duck;
+import com.nc.despat.simuduck.ducks.MallardDuck;
+import com.nc.despat.simuduck.ducks.ModelDuck;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 

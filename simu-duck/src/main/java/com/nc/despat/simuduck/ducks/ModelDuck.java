@@ -1,7 +1,7 @@
-package com.nc.despat.simudack.ducks;
+package com.nc.despat.simuduck.ducks;
 
-import com.nc.despat.simudack.behaviors.impl.FlyNoWay;
-import com.nc.despat.simudack.behaviors.impl.Quack;
+import com.nc.despat.simuduck.behaviors.impl.FlyNoWay;
+import com.nc.despat.simuduck.behaviors.impl.Quack;
 import org.apache.log4j.Logger;
 
 public class ModelDuck extends Duck {

@@ -1,7 +1,7 @@
-package com.nc.despat.simudack.ducks;
+package com.nc.despat.simuduck.ducks;
 
-import com.nc.despat.simudack.behaviors.impl.FlyingWithWings;
-import com.nc.despat.simudack.behaviors.impl.Quack;
+import com.nc.despat.simuduck.behaviors.impl.FlyingWithWings;
+import com.nc.despat.simuduck.behaviors.impl.Quack;
 import org.apache.log4j.Logger;
 
 public class MallardDuck extends Duck {

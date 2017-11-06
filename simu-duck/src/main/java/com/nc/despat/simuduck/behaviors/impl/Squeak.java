@@ -1,6 +1,6 @@
-package com.nc.despat.simudack.behaviors.impl;
+package com.nc.despat.simuduck.behaviors.impl;
 
-import com.nc.despat.simudack.behaviors.api.QuackBehavior;
+import com.nc.despat.simuduck.behaviors.api.QuackBehavior;
 import org.apache.log4j.Logger;
 
 public class Squeak implements QuackBehavior {

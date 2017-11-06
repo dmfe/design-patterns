@@ -9,12 +9,12 @@
         <groupId>com.nc.despat</groupId>
         <version>1.0</version>
     </parent>
-    <artifactId>simu-dack</artifactId>
+    <artifactId>simu-duck</artifactId>
     <packaging>jar</packaging>
-    <name>simu-dack</name>
+    <name>simu-duck</name>
 
     <properties>
-        <project.src.maincl>com.nc.despat.simudack.MainDuckSimulator</project.src.maincl>
+        <project.src.maincl>com.nc.despat.simuduck.MainDuckSimulator</project.src.maincl>
     </properties>
 
     <build>

@@ -1,7 +1,7 @@
-package com.nc.despat.simudack.ducks;
+package com.nc.despat.simuduck.ducks;
 
-import com.nc.despat.simudack.behaviors.api.FlyBehavior;
-import com.nc.despat.simudack.behaviors.api.QuackBehavior;
+import com.nc.despat.simuduck.behaviors.api.FlyBehavior;
+import com.nc.despat.simuduck.behaviors.api.QuackBehavior;
 import org.apache.log4j.Logger;
 
 public abstract class Duck {

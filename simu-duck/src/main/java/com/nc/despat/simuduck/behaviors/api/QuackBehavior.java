@@ -1,4 +1,4 @@
-package com.nc.despat.simudack.behaviors.api;
+package com.nc.despat.simuduck.behaviors.api;
 
 public interface QuackBehavior {
     void quack();
