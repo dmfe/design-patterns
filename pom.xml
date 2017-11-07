@@ -12,7 +12,8 @@
 
     <modules>
         <module></module>
-        <module>simu-dack</module>
+        <module>simu-duck</module>
+        <module>weather-station</module>
     </modules>
 
     <properties>
