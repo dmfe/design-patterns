@@ -14,6 +14,7 @@
         <module></module>
         <module>simu-duck</module>
         <module>weather-station</module>
+      <module>starbuzz-coffee</module>
     </modules>
 
     <properties>
