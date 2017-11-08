@@ -1,5 +1,6 @@
 package com.nc.despat.starbuzz;
 
+import com.nc.despat.io.IoTest;
 import com.nc.despat.starbuzz.beverages.Beverage;
 import com.nc.despat.starbuzz.beverages.DarkRoast;
 import com.nc.despat.starbuzz.beverages.Espresso;
@@ -35,5 +36,7 @@ public class StarbuzzCoffe {
         beverage3 = new Mocha(beverage3);
         beverage3 = new Whip(beverage3);
         System.out.println(beverage3.getDescription() + " $" + beverage3.cost());
+
+        new IoTest().run();
     }
 }
