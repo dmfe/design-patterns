@@ -1,25 +1,34 @@
 package com.nc.despat.pizzastore.store;
 
-import com.nc.despat.pizzastore.pizza.ChicagoStyleCheesePizza;
-import com.nc.despat.pizzastore.pizza.ChicagoStyleClamPizza;
-import com.nc.despat.pizzastore.pizza.ChicagoStylePepperoniPizza;
-import com.nc.despat.pizzastore.pizza.ChicagoStyleVeggiePizza;
+import com.nc.despat.pizzastore.ingredients.ChicagoPizzaIngredientFactory;
+import com.nc.despat.pizzastore.ingredients.PizzaIngredientFactory;
+import com.nc.despat.pizzastore.pizza.CheesePizza;
+import com.nc.despat.pizzastore.pizza.ClamPizza;
+import com.nc.despat.pizzastore.pizza.PepperoniPizza;
+import com.nc.despat.pizzastore.pizza.VeggiePizza;
 import com.nc.despat.pizzastore.pizza.Pizza;
 
 public class ChicagoStylePizzaStore extends PizzaStore {
 
     @Override
     protected Pizza createPizza(String type) {
+        Pizza pizza = null;
+        PizzaIngredientFactory ingredientFactory = new ChicagoPizzaIngredientFactory();
+
         if (Pizza.CHEESE_TYPE.equals(type)) {
-            return new ChicagoStyleCheesePizza();
+            pizza = new CheesePizza(ingredientFactory);
+            pizza.setName("Chicago Style Cheese Pizza");
         } else if (Pizza.CLAM_TYPE.equals(type)) {
-            return new ChicagoStyleClamPizza();
+            pizza = new ClamPizza(ingredientFactory);
+            pizza.setName("Chicago Style Clam Pizza");
         } else if (Pizza.PEPPERONI_TYPE.equals(type)) {
-            return new ChicagoStylePepperoniPizza();
+            pizza = new PepperoniPizza(ingredientFactory);
+            pizza.setName("Chicago Style Pepperoni Pizza");
         } else if (Pizza.VEGGIE_TYPE.equals(type)) {
-            return new ChicagoStyleVeggiePizza();
-        } else {
-            return null;
+            pizza = new VeggiePizza(ingredientFactory);
+            pizza.setName("Chicago Style Veggie Pizza");
         }
+
+        return pizza;
     }
 }

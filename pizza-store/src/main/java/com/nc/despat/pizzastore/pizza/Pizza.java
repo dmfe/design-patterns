@@ -1,8 +1,13 @@
 package com.nc.despat.pizzastore.pizza;
 
+import com.nc.despat.pizzastore.ingredients.cheese.Cheese;
+import com.nc.despat.pizzastore.ingredients.clam.Clams;
+import com.nc.despat.pizzastore.ingredients.dough.Dough;
+import com.nc.despat.pizzastore.ingredients.pepperoni.Pepperoni;
+import com.nc.despat.pizzastore.ingredients.sauce.Sauce;
+import com.nc.despat.pizzastore.ingredients.veggie.Veggie;
 import org.apache.log4j.Logger;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Pizza {
@@ -14,28 +19,14 @@ public abstract class Pizza {
     public static final String PEPPERONI_TYPE  = "pepperoni";
 
     protected String name;
-    protected String dough;
-    protected String sauce;
-    protected List<String> toppings = new ArrayList<>();
+    protected Dough dough;
+    protected Sauce sauce;
+    protected Cheese cheese;
+    protected Pepperoni pepperoni;
+    protected Clams clams;
+    protected List<Veggie> veggies;
 
-    public String getName() {
-        return name;
-    }
-
-    public void prepare() {
-        log.info("Preparing " + name);
-        System.out.println("Preparing " + name);
-
-        log.info("Tossing dough...");
-        System.out.println("Tossing dough...");
-
-        log.info("Adding sauce...");
-        System.out.println("Adding sauce...");
-
-        System.out.println("Adding toppings:");
-        toppings.forEach(toppping -> System.out.println("  -> " + toppping));
-        log.info("Adding toppings: " + toppings.stream().reduce("", (s, c) -> s + ", " +  c));
-    }
+    public abstract void prepare();
 
     public void bake() {
         log.info("Bake for 25 minutes at 350");
@@ -50,5 +41,23 @@ public abstract class Pizza {
     public void box() {
         log.info("Place pizza into official PizzaStore box");
         System.out.println("Place pizza into official PizzaStore box");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (dough: " + dough +
+                ", sauce: " + sauce +
+                ", cheese: " + cheese +
+                ", pepperoni: " + pepperoni +
+                ", clams: " + clams +
+                ", veggies: " + veggies + ")";
     }
 }

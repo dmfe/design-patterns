@@ -18,9 +18,11 @@ public class PizzaTest {
     private void run() {
         log.info("Pizza Store application started...");
         PizzaStore nyStore = new NYStylePizzaStore();
-        nyStore.orderPizza(Pizza.CHEESE_TYPE);
+        Pizza nyPizza = nyStore.orderPizza(Pizza.CHEESE_TYPE);
+        log.info(nyPizza);
 
         PizzaStore chicagoStore = new ChicagoStylePizzaStore();
-        chicagoStore.orderPizza(Pizza.VEGGIE_TYPE);
+        Pizza chPizza = chicagoStore.orderPizza(Pizza.VEGGIE_TYPE);
+        log.info(chPizza);
     }
 }
