@@ -2,10 +2,10 @@ package com.nc.despat.simuduck.ducks;
 
 import com.nc.despat.simuduck.behaviors.impl.FlyNoWay;
 import com.nc.despat.simuduck.behaviors.impl.Quack;
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class ModelDuck extends Duck {
-    private static final Logger log = Logger.getLogger(ModelDuck.class);
 
     public ModelDuck() {
         quackBehavior = new Quack();

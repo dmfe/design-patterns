@@ -2,10 +2,10 @@ package com.nc.despat.simuduck.ducks;
 
 import com.nc.despat.simuduck.behaviors.impl.FlyingWithWings;
 import com.nc.despat.simuduck.behaviors.impl.Quack;
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class MallardDuck extends Duck {
-    private static final Logger log = Logger.getLogger(MallardDuck.class);
 
     // Here we are programming to a particular behavior implementation. This is not good.
     public MallardDuck() {

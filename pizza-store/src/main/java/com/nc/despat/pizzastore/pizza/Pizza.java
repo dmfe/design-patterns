@@ -6,12 +6,12 @@ import com.nc.despat.pizzastore.ingredients.dough.Dough;
 import com.nc.despat.pizzastore.ingredients.pepperoni.Pepperoni;
 import com.nc.despat.pizzastore.ingredients.sauce.Sauce;
 import com.nc.despat.pizzastore.ingredients.veggie.Veggie;
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
+@Slf4j
 public abstract class Pizza {
-    private static final Logger log = Logger.getLogger(Pizza.class);
 
     public static final String CHEESE_TYPE  = "cheese";
     public static final String VEGGIE_TYPE  = "veggie";

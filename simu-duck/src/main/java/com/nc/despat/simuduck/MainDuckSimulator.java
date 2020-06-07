@@ -4,14 +4,12 @@ import com.nc.despat.simuduck.behaviors.impl.FlyRocketPowered;
 import com.nc.despat.simuduck.ducks.Duck;
 import com.nc.despat.simuduck.ducks.MallardDuck;
 import com.nc.despat.simuduck.ducks.ModelDuck;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class MainDuckSimulator {
-    private static final Logger log = Logger.getLogger(MainDuckSimulator.class);
 
     public static void main(String[] args) {
-        PropertyConfigurator.configure(MainDuckSimulator.class.getClassLoader().getResourceAsStream("log4j.properties"));
         new MainDuckSimulator().start();
     }
 

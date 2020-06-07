@@ -8,14 +8,12 @@ import com.nc.despat.starbuzz.beverages.HouseBlend;
 import com.nc.despat.starbuzz.beverages.condiments.Mocha;
 import com.nc.despat.starbuzz.beverages.condiments.Soy;
 import com.nc.despat.starbuzz.beverages.condiments.Whip;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class StarbuzzCoffe {
-    private static final Logger log = Logger.getLogger(StarbuzzCoffe.class);
 
     public static void main(String[] args) {
-        PropertyConfigurator.configure(StarbuzzCoffe.class.getClassLoader().getResourceAsStream("log4j.properties"));
         new StarbuzzCoffe().run();
     }
 

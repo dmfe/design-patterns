@@ -2,13 +2,13 @@ package com.nc.despat.weather.beans;
 
 import com.nc.despat.weather.api.Observer;
 import com.nc.despat.weather.api.Subject;
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 public class WeatherData implements Subject {
-    private static final Logger log = Logger.getLogger(WeatherData.class);
 
     private List<Observer> observers;
     private float temperature;

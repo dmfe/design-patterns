@@ -1,14 +1,13 @@
 package com.nc.despat.io;
 
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.BufferedInputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+@Slf4j
 public class IoTest {
-    private static final Logger log = Logger.getLogger(IoTest.class);
 
     public void run() {
         toLowerCaseTest();

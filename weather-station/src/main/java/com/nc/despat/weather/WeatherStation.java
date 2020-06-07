@@ -6,11 +6,11 @@ import com.nc.despat.weather.displays.CurrentConditionsDisplay;
 import com.nc.despat.weather.displays.ForecastDisplay;
 import com.nc.despat.weather.displays.HeatIndexDisplay;
 import com.nc.despat.weather.displays.StatisticsDisplay;
-import org.apache.log4j.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.log4j.PropertyConfigurator;
 
+@Slf4j
 public class WeatherStation {
-    private static final Logger log = Logger.getLogger(WeatherStation.class);
 
     public static void main(String[] args) {
         PropertyConfigurator.configure(WeatherStation.class.getClassLoader().getResourceAsStream("log4j.properties"));
